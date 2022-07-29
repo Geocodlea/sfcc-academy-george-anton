@@ -1,0 +1,12 @@
+${pdict.title}
+<br />
+${pdict.profileForm.customer.firstname.value}
+<br />
+${pdict.profileForm.customer.lastname.value}
+<br />
+${pdict.profileForm.customer.email.value}
+<br />
+${Resource.msg('button.createaccount.registration', 'registration', null)}
+<br />
+${dw.system.Site.getCurrent().getPreferences().custom.customerServiceEmail}
+<br />

@@ -1,0 +1,1 @@
+{"clients":[{"client_id":"78c05c12-8f48-4070-a1fc-4d08ffe6662a","permissions":[{"path":"/cartridges","operations":["read_write"]},{"path":"/impex","operations":["read_write"]}]}]}

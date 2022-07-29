@@ -1,0 +1,12 @@
+<isset name="sessionVar1" value="${1}" scope="session" />
+
+<isset name="sessionVar2" value="${2}" scope="request" />
+
+<isset name="sessionVar3" value="${3}" scope="page" />
+
+
+${session.custom.sessionVar1 + 1}
+
+${request.custom.sessionVar2 + 2}
+
+${sessionVar3 + 3}

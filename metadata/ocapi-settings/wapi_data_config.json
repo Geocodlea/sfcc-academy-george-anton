@@ -1,0 +1,1 @@
+{"_v":"18.1","clients":[{"client_id":"78c05c12-8f48-4070-a1fc-4d08ffe6662a","resources":[{"methods":["get","post","put","patch","delete"],"read_attributes":"(**)","write_attributes":"","resource_id":"/**"}]}]}
