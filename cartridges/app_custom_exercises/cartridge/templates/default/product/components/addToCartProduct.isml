@@ -1,0 +1,16 @@
+<div class="row cart-and-ipay">
+    <div class="col-sm-12">
+        <form action="${URLUtils.url('Cart-Mail', 'pid', product.id, 'image', product.images.large[0].absURL, 'name', product.productName,
+                      'description', product.shortDescription, 'price', product.price.sales.value, 'currency', product.price.sales
+                      .currency, 'quantity', product.selectedQuantity)}" class="registration" method="POST"
+            name="mailForm">
+            <input type="hidden" class="add-to-cart-url" value="${pdict.addToCartUrl}">
+            <button class="add-to-cart btn btn-primary" data-toggle="modal" data-target="#chooseBonusProductModal"
+                data-pid="${product.id}" ${!product.readyToOrder || !product.available ? "disabled" : ""} type="submit"
+                id="btnTest">
+                <i class="fa fa-shopping-bag"></i>
+                ${Resource.msg('button.addtocart', 'common', null)}
+            </button>
+        </form>
+    </div>
+</div>

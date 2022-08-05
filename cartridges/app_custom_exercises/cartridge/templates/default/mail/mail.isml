@@ -1,0 +1,26 @@
+<iscontent type="text/html" charset="UTF-8" />
+
+<html>
+
+<body>
+
+    ${Resource.msg('mail.text', 'mail', null)}
+    <br />
+    <img src="${pdict.product.image}">
+    <br />
+    ${Resource.msg('product.name', 'mail', null)}
+    <a href="${URLUtils.url('Product-Show', 'pid', pdict.product.pid)}">
+        <isprint value="${pdict.product.name}" />
+    </a>
+    <br />
+    ${Resource.msg('product.description', 'mail', null)} <isprint value="${pdict.product.description}">
+        <br />
+        ${Resource.msg('product.price', 'mail', null)}
+        <isprint value="${pdict.product.currency}" />
+        <isprint value="${pdict.product.price}" />
+        <br />
+        ${Resource.msg('quantity', 'mail', null)} <isprint value="${pdict.product.quantity}">
+
+</body>
+
+</html>
