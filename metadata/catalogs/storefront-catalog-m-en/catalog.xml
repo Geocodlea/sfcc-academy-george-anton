@@ -3884,17 +3884,6 @@
         </custom-attributes>
     </category>
 
-    <category category-id="Test Category">
-        <online-flag>true</online-flag>
-        <parent>mens</parent>
-        <template/>
-        <page-attributes/>
-        <custom-attributes>
-            <custom-attribute attribute-id="enableCompare">false</custom-attribute>
-            <custom-attribute attribute-id="showInMenu">true</custom-attribute>
-        </custom-attributes>
-    </category>
-
     <category category-id="electronics">
         <display-name xml:lang="x-default">Electronics</display-name>
         <online-flag>true</online-flag>
@@ -4495,18 +4484,6 @@
         <page-attributes/>
         <custom-attributes>
             <custom-attribute attribute-id="alternativeUrl">$url('Search-Show','cgid','root','srule','top-sellers')$</custom-attribute>
-            <custom-attribute attribute-id="enableCompare">false</custom-attribute>
-            <custom-attribute attribute-id="showInMenu">true</custom-attribute>
-        </custom-attributes>
-    </category>
-
-    <category category-id="Test Category 1">
-        <display-name xml:lang="x-default">Test Category 1</display-name>
-        <online-flag>true</online-flag>
-        <parent>root</parent>
-        <template/>
-        <page-attributes/>
-        <custom-attributes>
             <custom-attribute attribute-id="enableCompare">false</custom-attribute>
             <custom-attribute attribute-id="showInMenu">true</custom-attribute>
         </custom-attributes>
@@ -6532,7 +6509,6 @@
                 <quantity>1</quantity>
             </bundled-product>
         </bundled-products>
-        <classification-category>Test Category 1</classification-category>
         <pinterest-enabled-flag>false</pinterest-enabled-flag>
         <facebook-enabled-flag>false</facebook-enabled-flag>
         <store-attributes>
@@ -6563,7 +6539,6 @@
             <product-set-product product-id="008884303989M"/>
             <product-set-product product-id="P0048M"/>
         </product-set-products>
-        <classification-category>Test Category 1</classification-category>
         <pinterest-enabled-flag>false</pinterest-enabled-flag>
         <facebook-enabled-flag>false</facebook-enabled-flag>
         <store-attributes>
@@ -6573,22 +6548,6 @@
             <non-discountable-flag>false</non-discountable-flag>
         </store-attributes>
     </product>
-
-    <category-assignment category-id="Test Category 1" product-id="25720057M">
-        <primary-flag>true</primary-flag>
-    </category-assignment>
-
-    <category-assignment category-id="Test Category 1" product-id="Test Product Bundle">
-        <primary-flag>true</primary-flag>
-    </category-assignment>
-
-    <category-assignment category-id="Test Category 1" product-id="Test Product Set">
-        <primary-flag>true</primary-flag>
-    </category-assignment>
-
-    <category-assignment category-id="Test Category 1" product-id="apple-ipod-nano-blue-16gM">
-        <primary-flag>true</primary-flag>
-    </category-assignment>
 
     <category-assignment category-id="electronic-games" product-id="atari-pipe-mania-pspM">
         <primary-flag>true</primary-flag>
@@ -6774,21 +6733,13 @@
         <primary-flag>true</primary-flag>
     </category-assignment>
 
-    <category-assignment category-id="electronics-digital-media-players" product-id="apple-ipod-classicM">
-        <primary-flag>true</primary-flag>
-    </category-assignment>
+    <category-assignment category-id="electronics-digital-media-players" product-id="apple-ipod-classicM"/>
 
-    <category-assignment category-id="electronics-digital-media-players" product-id="apple-ipod-nanoM">
-        <primary-flag>true</primary-flag>
-    </category-assignment>
+    <category-assignment category-id="electronics-digital-media-players" product-id="apple-ipod-nanoM"/>
 
-    <category-assignment category-id="electronics-digital-media-players" product-id="apple-ipod-shuffleM">
-        <primary-flag>true</primary-flag>
-    </category-assignment>
+    <category-assignment category-id="electronics-digital-media-players" product-id="apple-ipod-shuffleM"/>
 
-    <category-assignment category-id="electronics-digital-media-players" product-id="apple-ipod-touchM">
-        <primary-flag>true</primary-flag>
-    </category-assignment>
+    <category-assignment category-id="electronics-digital-media-players" product-id="apple-ipod-touchM"/>
 
     <category-assignment category-id="electronics-digital-media-players" product-id="creative-zen-vM">
         <primary-flag>true</primary-flag>
@@ -6939,6 +6890,22 @@
     </category-assignment>
 
     <category-assignment category-id="electronics-gps-units" product-id="tomtom-xl-sM">
+        <primary-flag>true</primary-flag>
+    </category-assignment>
+
+    <category-assignment category-id="electronics-mobile-phones" product-id="apple-ipod-classicM">
+        <primary-flag>true</primary-flag>
+    </category-assignment>
+
+    <category-assignment category-id="electronics-mobile-phones" product-id="apple-ipod-nanoM">
+        <primary-flag>true</primary-flag>
+    </category-assignment>
+
+    <category-assignment category-id="electronics-mobile-phones" product-id="apple-ipod-shuffleM">
+        <primary-flag>true</primary-flag>
+    </category-assignment>
+
+    <category-assignment category-id="electronics-mobile-phones" product-id="apple-ipod-touchM">
         <primary-flag>true</primary-flag>
     </category-assignment>
 
