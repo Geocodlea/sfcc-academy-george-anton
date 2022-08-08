@@ -1,0 +1,36 @@
+{
+    "step-types":
+    {
+      "script-module-step":
+      [
+        {
+            "@type-id": "custom.CategoryAssign",
+            "@supports-parallel-execution": "false",
+            "@supports-site-context": "false",
+            "@supports-organization-context": "true",
+            "module": "app_custom_exercises/cartridge/scripts/job/categoryAssign.js",
+            "function": "execute",
+            "transactional": "true",
+            "parameters": {
+                "parameter": [
+                    {
+                        "@name": "brand",
+                        "@type": "string",
+                        "@required": "true"
+                    }
+                ]
+            },
+            "status-codes": {
+                "status": [
+                    {
+                        "@code": "ERROR"
+                    },
+                    {
+                        "@code": "OK"
+                    }
+                ]
+            }
+        }
+      ]
+    }
+}
