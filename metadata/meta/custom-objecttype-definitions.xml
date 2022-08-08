@@ -9,6 +9,14 @@
             <min-length>0</min-length>
         </key-definition>
         <attribute-definitions>
+            <attribute-definition attribute-id="couponCode">
+                <display-name xml:lang="x-default">Coupon Code</display-name>
+                <type>string</type>
+                <localizable-flag>false</localizable-flag>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+                <min-length>0</min-length>
+            </attribute-definition>
             <attribute-definition attribute-id="firstName">
                 <display-name xml:lang="x-default">First Name</display-name>
                 <type>string</type>
@@ -32,6 +40,7 @@
                 <attribute attribute-id="email"/>
                 <attribute attribute-id="firstName"/>
                 <attribute attribute-id="lastName"/>
+                <attribute attribute-id="couponCode"/>
             </attribute-group>
         </group-definitions>
     </custom-type>
