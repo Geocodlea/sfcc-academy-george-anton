@@ -1,4 +1,5 @@
-<form action="${pdict.actionUrl}" method="POST" name="${pdict.profileForm.htmlName}">
+<form data-action="${pdict.actionUrl}" method="POST" name="${pdict.profileForm.htmlName}" id="newsletterForm"
+    data-subscription="${pdict.subscriptionUrl}">
 
     <div class="form-group
         <isif condition=" ${pdict.profileForm.customer.email.mandatory === true}">required</isif>">
@@ -30,8 +31,10 @@
         <div class="invalid-feedback" id="form-lname-error"></div>
     </div>
 
-    <button type="submit" class="btn btn-block btn-primary w-50">
+    <button type="button" class="btn btn-block btn-primary w-50 newsletter-modal" data-toggle="modal"
+        data-target="#newsletterModal">
         ${Resource.msg('button.save', 'forms', null)}
     </button>
 
+    <isinclude template="newsletter/newsletterModal" />
 </form>
