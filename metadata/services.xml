@@ -1,2 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<services xmlns="http://www.demandware.com/xml/impex/services/2014-09-26"/>
+<services xmlns="http://www.demandware.com/xml/impex/services/2014-09-26">
+    <service-credential service-credential-id="https.RefArch.getSony.cred">
+        <url>https://zzrb-302.sandbox.us01.dx.commercecloud.salesforce.com/s/RefArch/dw/shop/v22_8/product_search?refine_1=cgid=electronics&amp;refine_2=brand=Sony&amp;count=20&amp;client_id=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</url>
+        <user-id>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</user-id>
+        <password encrypted="true" encryption-type="common.export">a2Fs7uA2PY7nyDJ4+7jwqGNjqz6APsP2rS1IbtBGrW9SzVC9pns6Xg+jcAhnWTM+bzFu+mXrEQuW98AVRgsk3Q==</password>
+    </service-credential>
+
+    <service-credential service-credential-id="https.flickr.getRecent.cred">
+        <url>https://www.flickr.com/services/rest/?method=flickr.photos.getRecent&amp;api_key=ca3038702ea665640f1804bf0eae35fa&amp;per_page=20&amp;format=json&amp;nojsoncallback=1</url>
+        <user-id>test</user-id>
+        <password encrypted="true" encryption-type="common.export">17MFCdP12FeGmDDCVIX0K0BIbtcTESrKLR39Wb6XWGPSZQ3jgsQcNIVV3cvMN+YZ</password>
+    </service-credential>
+
+    <service-credential service-credential-id="soap.infovalutar.curencyConverter.cred">
+        <url>www.infovalutar.ro/curs.asmx</url>
+        <user-id>test</user-id>
+        <password encrypted="true" encryption-type="common.export">BlTnI+nlJvZc1SpOASjeurw4I5Lrh8qkN9Xxa70hNSXSZQ3jgsQcNIVV3cvMN+YZ</password>
+    </service-credential>
+
+    <service-profile service-profile-id="Test Profile">
+        <timeout-millis>1000</timeout-millis>
+        <rate-limit-enabled>true</rate-limit-enabled>
+        <rate-limit-calls>100</rate-limit-calls>
+        <rate-limit-millis>10000</rate-limit-millis>
+        <cb-enabled>true</cb-enabled>
+        <cb-calls>100</cb-calls>
+        <cb-millis>10000</cb-millis>
+    </service-profile>
+
+    <service service-id="app_custom_exrcises.https.RefArch.getSony">
+        <service-type>HTTP</service-type>
+        <enabled>true</enabled>
+        <log-prefix>sony</log-prefix>
+        <comm-log-enabled>true</comm-log-enabled>
+        <force-prd-enabled>false</force-prd-enabled>
+        <mock-mode-enabled>false</mock-mode-enabled>
+        <profile-id>Test Profile</profile-id>
+        <credential-id>https.RefArch.getSony.cred</credential-id>
+    </service>
+
+    <service service-id="app_custom_exrcises.https.flickr.getRecentPhotos">
+        <service-type>HTTP</service-type>
+        <enabled>true</enabled>
+        <log-prefix>flickr</log-prefix>
+        <comm-log-enabled>true</comm-log-enabled>
+        <force-prd-enabled>false</force-prd-enabled>
+        <mock-mode-enabled>false</mock-mode-enabled>
+        <profile-id>Test Profile</profile-id>
+        <credential-id>https.flickr.getRecent.cred</credential-id>
+    </service>
+
+    <service service-id="app_custom_exrcises.soap.curencyConverter.get">
+        <service-type>SOAP</service-type>
+        <enabled>true</enabled>
+        <log-prefix>curency</log-prefix>
+        <comm-log-enabled>true</comm-log-enabled>
+        <force-prd-enabled>false</force-prd-enabled>
+        <mock-mode-enabled>false</mock-mode-enabled>
+        <profile-id>Test Profile</profile-id>
+        <credential-id>soap.infovalutar.curencyConverter.cred</credential-id>
+    </service>
+
+</services>
